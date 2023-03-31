@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif; 
+}
+.budget label,.expenses label {
+    font:1.2em bold;
+}
+.add {
+    width:150px;
+}
+.display-calculation{
+    margin-top: 6rem;
+}
+.bi-pencil-fill,.bi-trash-fill{
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.error-message p{
+    font-size: 1.1em;
+}
+/* media queries for screens with maximum width of 850px */
+@media screen and (max-width:850px){
+    h1{
+        font-size: 1.7em;
+    }
+    .budget-inputs{
+        flex-direction: column;
+    }
+    .budget-amount h3,.expenses-amount h3, .balance h3{
+       
+        font-size: 1.4em;
+    }
+}
+/* media queries for screens with maximum width of 850px */
+@media screen and (max-width:650px){
+    h1{
+        font-size: 1.4em;
+    }
+    .show-off{
+        flex-direction: column;
+    }
+    .expenses-amount,.balance{
+        margin-top: 1.2rem;
+        
+    }
+    .budget-amount h3,.expenses-amount h3, .balance h3{
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
